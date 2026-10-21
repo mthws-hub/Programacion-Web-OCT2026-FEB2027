@@ -1,109 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+ 
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #f3f4f6;
+      background-color: #0a0a0a;
+    }
+ 
+    .contenedor {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+ 
+    .encabezado {
+      display: flex;
+      flex-direction: row;
+      gap: 48px;
+      padding: 48px;
+      margin-bottom: 32px;
+      background-color: #111111;
+      border: 1px solid #262626;
+      border-radius: 10px;
+      border-top: 3px solid #3b82f6;
+    }
 
-.cuerpo-pagina {
-    background: rgba(190, 209, 240, 0.907);
-    color: #0f070a;
-    line-height: 1.6;
-}
+    .imagen {
+        border: 2px solid #3b82f6;
+        border-radius: 25px;
+    }
+ 
+    .etiqueta {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+    }
+ 
+    .encabezado-texto h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+ 
+    .encabezado-texto p {
+      font-size: 18px;
+      color: #9ca3af;
+    }
+ 
+    .seccion {
+      padding: 32px;
+      margin-bottom: 32px;
+      background-color: #111111;
+      border: 1px solid #262626;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+ 
+    .titulo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: #161616;
+      margin-bottom: 24px;
+    }
+ 
+    .titulo h2 {
+      font-size: 24px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+ 
+    .titulo .num {
+      font-family: "Courier New", monospace;
+      font-size: 18px;
+      color: #3b82f6;
+      margin-right: 6px;
+    }
+ 
+    .seccion p {
+      color: #9ca3af;
+    }
+ 
+    .formacion {
+      list-style: none;
+      margin-left: 8px;
+      padding-left: 32px;
+      border-left: 1px solid #262626;
+    }
 
-.contenedor-seccion {
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgb(15, 50, 105);
-    padding: 30px;
-}
+    .formacion a{
+        color: white;
+    }
+    .formacion a:hover{
+        color: #3b82f6;
+    }
+ 
+    .formacion .fecha {
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      color: #10b981;
+    }
+ 
+    .intereses {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+ 
+    .interes {
+      padding: 16px;
+      font-family: "Courier New", monospace;
+      font-size: 14px;
+      color: #d1d5db;
+      background-color: #161616;
+      border: 1px solid #10b981;
+      border-radius: 8px;
+    } 
 
-.imagen-perfil {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 4px solid rgb(15, 50, 105);
-}
+    .interes:hover {
+        background-color: #10b981;
+    }
+    
+    .enlaces {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-.subtitulo {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: #333;
-    margin-bottom: 15px;
-    border-bottom: 2px solid rgb(15, 50, 105);
-    padding-bottom: 5px;
-}
+    .enlaces a:hover {
+      color: #3b82f6;
+    }
 
-.texto-comun {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    text-align: justify;
-}
+    .campo-formulario {
+        display: block;
+        width: 100%;
+        margin: 6px 0 24px;
+        padding: 12px 14px;
+        font-family: inherit;
+        font-size: 16px;
+        color: #f3f4f6;
+        background-color: #161616;
+        border: 1px solid #262626;
+        border-radius: 8px;
+    }   
 
-.lista-intereses {
-    list-style-type: square;
-    margin-left: 25px;
-    margin-bottom: 15px;
-}
+    .campo-formulario:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    }
 
-.campo-formulario {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid rgb(15, 50, 105);
-    border-radius: 4px;
-    font-family: 'Work Sans', sans-serif;
-}
+    input[type="date"].campo-formulario {
+        color-scheme: dark;
+    }
 
-.boton-enviar {
-    background-color: rgb(15, 50, 105);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-}
+    input[type="radio"],
+    input[type="checkbox"] {
+        accent-color: #3b82f6;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
 
-.pie-pagina {
-    text-align: center;
-    padding: 20px;
-    background-color: rgb(9, 18, 35);
-    color: white;
-    border-radius: 8px;
-    max-width: 100%;
-    margin: 30px auto 20px auto;
-}
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+        padding: 4px 0;
+        color: #9ca3af;
+        cursor: pointer;
+    }
 
-.enlace {
-    color: rgb(15, 50, 105);
-    text-decoration: none;
-    font-weight: bold;
-}
+    .seccion .titulo-form {
+        color: #f3f4f6;
+        margin: 16px 0 8px;
+    }
+ 
+    .boton-enviar {
+        padding: 14px 32px;
+        font-family: "Courier New", monospace;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #ffffff;
+        background-color: #3b82f6;
+        border: 1px solid #3b82f6;
+        border-radius: 8px;
+        cursor: pointer;
+    }
 
+    .boton-enviar:hover {
+        background-color: #2563eb;
+    }
 
-.encabezado {
-    height: 100vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center; 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-image: url('../Recursos/fondo.jpg'); 
-    margin-bottom: 40px; 
-    position: relative;
-}
-
-.titulo {
-    font-size: 2.5rem;
-    text-align: center;
-    color: rgb(15, 50, 105);
-}
-
+    .pie {
+      text-align: center;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      color: #6b7280;
+      padding-top: 16px;
+    }
+ 
