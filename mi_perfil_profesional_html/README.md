@@ -27,4 +27,4 @@ El objetivo de este proyecto es la creación de un portafolio web personal y pro
 3. Finalmente acceder al sitio ingresando en la web con: http://localhost:8080
 
 # Enlace a Docker Hub.
-Enlace de la imagen pre-construida desde mi computador: https://hub.docker.com/repository/docker/mthwssd/mi-perfil-html 
+Enlace de la imagen pre-construida desde mi computador: https://hub.docker.com/repository/docker/mthwssd/mi-perfil-profesional
