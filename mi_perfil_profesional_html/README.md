@@ -10,6 +10,7 @@ El objetivo de este proyecto es la creación de un portafolio web personal y pro
 * Git/Github
 
 # Estructura del Proyecto
+```text
 /
 |- mi_perfil_profesional_html
 |-- index.html
@@ -20,7 +21,7 @@ El objetivo de este proyecto es la creación de un portafolio web personal y pro
     |-- fondo.jpg
 |-- css/
     |-- perfil.css
-
+```
 # Instrucciones para construir y ejecutar la imagen Docker
 1. Construir la imagen localmente: docker build -t mathewspastor-perfil-profesional .
 2. Construir el contenedor: docker run -d -p 8080:80 mathewspastor-perfil-profesional
